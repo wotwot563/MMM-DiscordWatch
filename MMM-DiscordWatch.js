@@ -1,4 +1,8 @@
+let test;
+
 Module.register("MMM-DiscordWatch", {
+    
+    test = this;
     // Default module config.
     defaults: {
         discordToken: false,
