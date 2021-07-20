@@ -40,5 +40,7 @@ Module.register("MMM-DiscordWatch", {
         });
     },
 
-
+    socketNotificationReceived: function(notification, msg){
+        this.sendNotification("SHOW_ALERT", {type: "notification", title:msg.author, message:msg.txt, timer: 7000 })
+    }
 });
