@@ -1,7 +1,5 @@
-# MMM-DiscordWatch
-This is a module for displaying messages from Discord channels on [MagicMirror](https://github.com/MichMich/MagicMirror). 
-
-![Preview](readme_assets/preview.png)
+# MMM-DiscordAlert
+This is a module for Alerting messages from Discord channels on [MagicMirror](https://github.com/MichMich/MagicMirror). 
 
 The module uses discord's bot API and the npm package [discord.js](https://discord.js.org/).
 
