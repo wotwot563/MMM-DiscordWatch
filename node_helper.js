@@ -31,8 +31,6 @@ module.exports = NodeHelper.create({
         client.on('ready', () => {
             console.debug(`Logged in as ${client.user.tag}!`);
             self.sendSocketNotification("CONNECTED", { id: identifier });
-            //request the last x messages
-            this.requestLastMessages(client, config, identifier);
         });
 
         client.on('message', msg => {
