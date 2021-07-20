@@ -35,7 +35,7 @@ module.exports = NodeHelper.create({
 
         client.on('message', msg => {
             if (config.subscribedChannels.indexOf(msg.channel.id) > -1) {
-                this.sendNotification("SHOW_ALERT", {type: "notification", title:msg.author.username, message: msg.content, timer: 1000});
+                test.sendNotification("SHOW_ALERT", {type: "notification", title:msg.author.username, message: msg.content, timer: 1000});
 
                 self.sendSocketNotification("NEW_MESSAGE", { id: identifier, text: msg.content, author: msg.author.username, channel: msg.channel.name, createdAt: msg.createdAt })
             }
